@@ -59,10 +59,19 @@ export default function WalkFormPage() {
 
     try {
       setLoading(true);
+      
+      const dataToSend = {
+        dogName: formData.dogName,
+        date: formData.date,
+        durationMinutes: Number(formData.durationMinutes),
+        distanceKm: Number(formData.distanceKm),
+        notes: formData.notes
+      };
+
       if (isEditing) {
-        await updateWalk(id, formData);
+        await updateWalk(id, dataToSend);
       } else {
-        await createWalk(formData);
+        await createWalk(dataToSend);
       }
       navigate("/walks");
     } catch (err) {
