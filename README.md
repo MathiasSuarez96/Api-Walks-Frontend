@@ -145,6 +145,8 @@ npm run lint     # Linter ESLint
 
 ## 👨‍💻 Autor
 
+Video explicativo: https://www.youtube.com/watch?v=TC4R9xPMemk&t=14s
+
 **Mathias Suarez**
 
 - GitHub: [@MathiasSuarez96](https://github.com/MathiasSuarez96)
